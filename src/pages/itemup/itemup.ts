@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Mypage1Page } from '../mypage1/mypage1';
-import { ItemupPage } from '../itemup/itemup';
-import { ItemlistPage } from '../itemlist/itemlist';
-
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the ItemupPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,24 +11,18 @@ import { ItemlistPage } from '../itemlist/itemlist';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-itemup',
+  templateUrl: 'itemup.html',
 })
-export class HomePage {
+export class ItemupPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad ItemupPage');
   }
   GoMypage(){
-    this.navCtrl.push(Mypage1Page);
-  }
-  GoItemupPage(){
-    this.navCtrl.push(ItemupPage);
-  }
-  GoItemlistPage(){
-    this.navCtrl.push(ItemlistPage);
+    this.navCtrl.pop();
   }
 }
