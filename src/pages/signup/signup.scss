@@ -1,23 +1,30 @@
 page-signup {
+  background: #C8E1EF;
+  form{
+    top: 5%;
+    background: #F6D6DB;
+    width: 90%;
+    left: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    font-family: lato;
+    position: relative;
+    color: #333;
+    border-radius: 10px;
+    
+  }
     form label {
         margin-left: 20px;
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
         position: relative;
-      }
-      form label span {
-        color: #FF3838;
-        font-size: 2em;
-        position: absolute;
-        left: 2.3em;
-        top: -10px;
+        font-size: 1.2em;
       }
       form input {
         display: block;
         width: 78%;
         margin-left: 20px;
-        padding: 5px 20px;
+        padding: 5px 10px;
         font-size: 1em;
         border-radius: 3px;
         outline: none;
@@ -47,4 +54,5 @@ page-signup {
       form button:hover {
         background: #ff5252;
       }
+      
 }

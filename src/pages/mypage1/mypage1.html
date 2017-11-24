@@ -1,34 +1,34 @@
-<!--
-  Generated template for the Mypage1Page page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
     <ion-title>Mypage-관리자</ion-title>
   </ion-navbar>
-  <ion-buttons side="right" class="has-header">
-    <button class="button button-icon icon ion-android-home"></button>
-  </ion-buttons>
 </ion-header>
 
 
-<ion-content padding="true" class="has-header">
-  <h3 id="mypage-heading1" style="color:#000000;">올라온 매물</h3>
-  <ion-list id="mypage-list6"> 
-    <ion-item id="mypage-list-item12" (click)="GoItemdetailPage()">Item 1</ion-item>
-    <ion-item id="mypage-list-item13" (click)="GoItemdetailPage()">Item 2</ion-item>
+<ion-content class="content">
+  <h3 >올라온 매물</h3>
+  <ion-list > 
+      <ion-item class="test"  (click)="GoItemdetailPage()">양덕  원룸
+          <br><span >편의점 버스정류장</span>
+        </ion-item>
+        <ion-item class="test"  (click)="GoItemdetailPage()">장성동  미투
+            <br><span >편의점 공원</span>
+        </ion-item>  </ion-list>
+  <h3>거래중 매물</h3>
+  <ion-list>
+      <ion-item class="test" (click)="GoItemdetailPage()" >양덕 원룸
+          <br><span >편의점 신축</span>
+      </ion-item>
+    <button  class="chat" (click)="GoChattingPage()">채팅</button>
+    
+    <ion-item class="test" (click)="GoItemdetailPage()" >양덕 원룸
+        <br><span >버스정류장 신축</span>
+    </ion-item>
+    <button class="chat" (click)="GoChattingPage()">채팅</button>
+    
   </ion-list>
-  <h3 id="mypage-heading3" style="color:#000000;">거래중 매물</h3>
-  <ion-list id="mypage-list11">
-    <ion-item id="mypage-list-item23" (click)="GoItemdetailPage()">Item 3</ion-item>
-    <button class="button-calm"  (click)="GoChattingPage()">채팅</button>
-    <ion-item id="mypage-list-item20" (click)="GoItemdetailPage()">Item 4</ion-item>
-    <button class="button-calm" (click)="GoChattingPage()">채팅</button>
-  </ion-list>
-  <button class="button-calm" (click)="GoUserlistPage()">사용자 목록 보기</button>
+  <button  (click)="GoUserlistPage()">사용자 목록 보기</button>
 </ion-content>
 
 

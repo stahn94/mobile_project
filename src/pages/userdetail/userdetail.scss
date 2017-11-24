@@ -1,3 +1,27 @@
 page-userdetail {
-
+    background: #C8E1EF;
+    .content{
+        background:  rgba(255, 255, 255, 0);
+    }
+    p{
+        font-family: inherit;
+        font-size: 1.2em;
+    }
+    ion-content button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-family: inherit;
+        color: white;
+        background: #FF3838;
+        outline: none;
+        border: none;
+        padding: 5px 15px;
+        font-size: 1.1em;
+        border-radius: 3px;
+        box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+      }
+    
 }
