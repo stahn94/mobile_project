@@ -8,24 +8,32 @@
 
 <ion-content class="content">
   <h3 >올라온 매물</h3>
-  <ion-list > 
-      <ion-item class="test"  (click)="GoItemdetailPage()">양덕  원룸
+  <ion-list >
+      <hr>
+      <p class="test"  (click)="GoItemdetailPage()">양덕  원룸
           <br><span >편의점 버스정류장</span>
-        </ion-item>
-        <ion-item class="test"  (click)="GoItemdetailPage()">장성동  미투
+        </p><hr>
+        <p class="test"  (click)="GoItemdetailPage()">장성동  미투
             <br><span >편의점 공원</span>
-        </ion-item>  </ion-list>
+        </p><hr>
+        </ion-list>
   <h3>거래중 매물</h3>
+  
   <ion-list>
-      <ion-item class="test" (click)="GoItemdetailPage()" >양덕 원룸
+      <hr>
+      <p class="test" (click)="GoItemdetailPage()" >양덕 원룸
+          <button  class="chat" (click)="GoChattingPage()">채팅</button>
           <br><span >편의점 신축</span>
-      </ion-item>
-    <button  class="chat" (click)="GoChattingPage()">채팅</button>
+          
+      </p><hr>
     
-    <ion-item class="test" (click)="GoItemdetailPage()" >양덕 원룸
+    
+    <p class="test" (click)="GoItemdetailPage()" >양덕 원룸
+        <button class="chat" (click)="GoChattingPage()">채팅</button>
         <br><span >버스정류장 신축</span>
-    </ion-item>
-    <button class="chat" (click)="GoChattingPage()">채팅</button>
+        
+    </p><hr>
+    
     
   </ion-list>
   <button  (click)="GoUserlistPage()">사용자 목록 보기</button>
