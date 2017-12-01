@@ -1,4 +1,5 @@
 page-itemlist {
+    background: #C8E1EF;
     .test {
         background: rgba(255,255,255, 0);
         margin: 10px 0px;
@@ -13,8 +14,12 @@ page-itemlist {
         background: rgba(255,255,255, 0);
     }
     .wait{
-        position: absolute;
-        top: 15px;
-        left: 60%;
+        position: relative;
+        top: -25px;
+        left: 10%;
+    }
+    .list{
+        position: relative;
+        left: 5%;
     }
 }

@@ -1,3 +1,24 @@
 page-chatting {
+    background: #C8E1EF;
+    color:#000000;
+    .content{
+        background:  rgba(255, 255, 255, 0);
+    }
+    .text_input{
+        font-family: inherit;
+        outline: none;
+        border: none;
+        font-weight: 400;
+        border-radius: 3px;
+        box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
 
+        width: 80px;
+        height: 24px; 
+        background: #BBC3BD; 
+        font-size: 12px;
+        color: black;
+        position: relative;
+        top: 20px;
+        left: 30%;
+    }
 }
