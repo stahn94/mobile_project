@@ -1,7 +1,7 @@
 page-login {
   background: #C8E1EF;
       form {
-        top: 20%;
+        top: 5%;
         background: white;
         width: 90%;
         left: 5%;
@@ -33,15 +33,15 @@ page-login {
         left: 2.3em;
         top: -10px;
       }
-      form input {
+      .input_txt {
         display: block;
         width: 78%;
         margin-left: 20px;
-        padding: 5px 20px;
         font-size: 1em;
         border-radius: 3px;
         outline: none;
         border: 1px solid #ccc;
+        height: 40px;
       }
       form .help {
         margin-left: 20px;
@@ -70,6 +70,15 @@ page-login {
       form button:hover {
         background: #ff5252;
       }
-      
+      .content{
+        background:  rgba(255, 255, 255, 0);
+    }
+    img{
+      top: 20px;
+      width: 130px;
+      height: 130px;
+      position: relative;
+      left: 33%;
+    }
 }
 //https://dcrazed.com/css-html-login-form-templates/

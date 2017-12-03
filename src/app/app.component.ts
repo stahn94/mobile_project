@@ -13,6 +13,7 @@ import { ItemdetailPage } from '../pages/itemdetail/itemdetail';
 import { ChattingPage } from '../pages/chatting/chatting';
 import { UserlistPage } from '../pages/userlist/userlist';
 import { UserdetailPage } from '../pages/userdetail/userdetail';
+import { MypagePage } from '../pages/mypage/mypage';
 
 
 

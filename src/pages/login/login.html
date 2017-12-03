@@ -1,12 +1,13 @@
-    <form>
+<img src="assets/imgs/jak.jpg">
+<form>
         <header>Login</header>
           <label>ID </label>
-          <input/>
-          <div class="help">At least 6 character</div>
+          <ion-input class="input_txt" type="text" #username></ion-input>
+          <div class="help">Form must be xxxx@xxx.xx</div>
           <label>Password </label>
-          <input/>
-          <div class="help">Use upper and lowercase lettes as well</div>
+          <ion-input class="input_txt" type="password" #password></ion-input>
+          <div class="help">At least 6 character</div>
           <button (click)="Gosignuppage()">Signup</button>
-          <button (click)="GoHomePage()"> Login </button>
+          <button (click)="signInUser()"> Login </button>
     </form>
 

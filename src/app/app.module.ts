@@ -15,6 +15,21 @@ import { ItemdetailPage } from '../pages/itemdetail/itemdetail';
 import { ChattingPage } from '../pages/chatting/chatting';
 import { UserlistPage } from '../pages/userlist/userlist';
 import { UserdetailPage } from '../pages/userdetail/userdetail';
+import { MypagePage } from '../pages/mypage/mypage';
+
+
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+const firebaseAuth = {
+  apiKey: "AIzaSyBXP8Bkp843Mbei9BzwxTes29ALO9aiEmE",
+  authDomain: "test-project-6731a.firebaseapp.com",
+  databaseURL: "https://test-project-6731a.firebaseio.com",
+  projectId: "test-project-6731a",
+  storageBucket: "test-project-6731a.appspot.com",
+  messagingSenderId: "330727066803"
+};
 
 
 @NgModule({
@@ -29,11 +44,14 @@ import { UserdetailPage } from '../pages/userdetail/userdetail';
     ItemdetailPage,
     ChattingPage,
     UserlistPage,
-    UserdetailPage
+    UserdetailPage,
+    MypagePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseAuth),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -47,7 +65,8 @@ import { UserdetailPage } from '../pages/userdetail/userdetail';
     ItemdetailPage,
     ChattingPage,
     UserlistPage,
-    UserdetailPage
+    UserdetailPage,
+    MypagePage
   ],
   providers: [
     StatusBar,

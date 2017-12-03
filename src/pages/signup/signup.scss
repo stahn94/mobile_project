@@ -33,15 +33,15 @@ page-signup {
         left: 2.3em;
         top: -10px;
       }
-      form input {
+      .input_txt {
         display: block;
         width: 78%;
         margin-left: 20px;
-        padding: 5px 20px;
         font-size: 1em;
         border-radius: 3px;
         outline: none;
         border: 1px solid #ccc;
+        height: 40px;
       }
       form .help {
         margin-left: 20px;
@@ -51,6 +51,7 @@ page-signup {
       form button {
         position: relative;
         margin-top: 30px;
+        margin-right: 10px;
         margin-bottom: 30px;
         left: 50%;
         transform: translate(-50%, 0);
@@ -59,7 +60,7 @@ page-signup {
         background: #FF3838;
         outline: none;
         border: none;
-        padding: 5px 15px;
+        padding: 5px 10px;
         font-size: 1.3em;
         font-weight: 400;
         border-radius: 3px;

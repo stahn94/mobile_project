@@ -4,13 +4,10 @@ import { Mypage1Page } from '../mypage1/mypage1';
 import { ItemupPage } from '../itemup/itemup';
 import { ItemlistPage } from '../itemlist/itemlist';
 import { LoginPage } from '../login/login';
+import { MypagePage } from '../mypage/mypage';
 
-/**
- * Generated class for the HomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AngularFireAuth } from 'angularfire2/auth';
+
 
 @IonicPage()
 @Component({
@@ -18,15 +15,23 @@ import { LoginPage } from '../login/login';
   templateUrl: 'home.html',
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  email: string;
+  constructor(private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
+    this.email = fire.auth.currentUser.email;
   }
+
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
   GoMypage(){
-    this.navCtrl.push(Mypage1Page);
+    if(this.email == "root@root.com"){
+      this.navCtrl.push(Mypage1Page);
+    }
+    else{
+      this.navCtrl.push(MypagePage);
+    }
   }
   GoItemupPage(){
     this.navCtrl.push(ItemupPage);

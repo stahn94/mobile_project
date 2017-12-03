@@ -1,14 +1,13 @@
 <form>
     <header>Sign up</header>
       <label>ID </label>
-      <input/>
+      <ion-input class="input_txt" type="text" #username></ion-input>
+      <div class="help">Form must be xxxx@xxx.xx</div>
       <label>Password </label>
-      <input/>
-      <label>Username </label>
-      <input/>
-      <label>Phone Number </label>
-      <input/>
-      <button (click)="Gologinpage()"> 가입하기</button> 
+      <ion-input class="input_txt" type="password" #password></ion-input>
+      <div class="help">At least 6 character</div>
+      <button (click)="Gologinpage()"> 뒤로가기</button> 
+      <button (click)="registerUser()"> 가입하기</button> 
 </form>
 
   
